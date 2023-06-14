@@ -1,0 +1,175 @@
+.projectbox{
+    background: #151515 ;
+    width: 100vw;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px double #d7bb05;
+    border-bottom: 10px double #d7bb05;
+
+
+}
+.projects{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 90vh;
+}
+.project{
+    position: relative;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 27vw;
+    height: 40vh;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 4px 4px 2px black,
+    -1px -1px 5px black;
+}
+.Video-candy{
+    background:linear-gradient(0deg,#00000061,#00000079), url(../images/projectimage/videocandy.png) ;
+    background-size: cover;
+}
+.Gym-mate{
+    background:linear-gradient(0deg,#00000061,#00000079), url(../images/projectimage/gymmate.png) ;
+    background-size: cover;
+}
+.Binary-crypto{
+    background:linear-gradient(0deg,#00000061,#00000079), url(../images/projectimage/Binarycrypto.png) ;
+    background-size: cover;
+}
+.Real-estate{
+    background:linear-gradient(0deg,#00000061,#00000079), url(../images/projectimage/real-estate.png) ;
+    background-size: cover;
+}
+.potfolio{
+    background:linear-gradient(0deg,#00000061,#00000079), url(../images/Skills_background.jpg) ;
+    background-size: cover;
+}
+.project::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,#fdfcfc0b,#ffe438e8,#ffffff0b);
+    opacity: 0.3;  
+    transition-duration: 4s;
+    width: 500px;
+    height: 5%;
+    z-index: 10;
+    transform: rotate(45deg);
+    animation: projectbefore s ease forwards ;
+
+}
+.project:hover::before{
+    animation: projectbefore 2s ease forwards ;
+}
+@keyframes projectbefore{
+
+    100%{
+        top: 50px;
+        left: 200px;
+    }
+}
+
+.project:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px #ffe43859,
+    -2px -2px 5px #ffe43859;
+ 
+}
+
+.projectbottom{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background: rgba(15, 15, 15, 0.699);
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.371);
+}
+
+.projecttext{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    font-size: 6.5px;
+    font-weight: 500;
+   color: #d7d6d6;
+}
+.visitproject{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5%;
+    bottom: 10%;
+    width: 20%;
+    height: 18%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(3, 3, 3);
+    background: linear-gradient(30deg,#d7bb05,#fce54b,#d3ba12);
+    box-shadow: 2px 2px 6px #FFE338,
+    -2px -2px 6px #FFE338;
+    transition-duration: 0.4s;
+    border: 1px  black;
+    overflow: hidden;
+}
+.visitproject a{
+    text-decoration: none;
+    color: black;
+}
+
+.visitproject:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px #FFE338,
+    -1px -1px 3px #FFE338;
+}
+.project-name{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 20px;
+    left: 10px;
+    filter: drop-shadow(3px 3px 1px black);
+    z-index: 5;
+}
+.project-name h2{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    background: linear-gradient(30deg, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+@media (max-width:480px){
+    .projects{
+        grid-template-columns: auto;
+        gap: 50px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+    }
+    .project{
+        width: 80vw;
+        height: 25vh;
+    }
+    .project-name h2{
+        width: 50vw;
+    }
+}

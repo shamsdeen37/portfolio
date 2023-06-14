@@ -1,0 +1,505 @@
+.IAM-message {
+    position: absolute;
+    font-size: 4vh;
+    background: linear-gradient(30deg, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: iammove 9s linear;
+    z-index: 60;
+
+}
+
+@keyframes iammove {
+    0% {
+        top: 7vh;
+        left: 29vw;
+        font-size: 5vw;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+    }
+
+    40% {
+        top: 7vh;
+        left: 24vw;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        font-size: 5vw;
+    }
+
+    50% {
+        top: 0vh;
+        left: 0vw;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        font-size: 3vw;
+    }
+
+    80% {
+        top: 0vh;
+        left: 0vw;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        font-size: 3vw;
+    }
+
+    100% {
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;    }
+}
+
+.name {
+    position: absolute;
+    font-family: 'Red Hat Display';
+    font-size: 2vw;
+    font-weight: 500;
+    /* color:linear-gradient(30deg,#d7bb05,#fce54b,#d3ba12,#d7bb05,#fce54b,#d3ba12,#d7bb05,#fce54b,#d3ba12,#d7bb05,#fce54b,#d3ba12); */
+    top: 10vh;
+    background: linear-gradient(30deg, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 60;
+
+    animation: namemove 9s linear;
+}
+
+@keyframes namemove {
+    0% {
+        top: 13vh;
+        font-size: 5vw;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;    }
+
+    50% {
+        top: 13vh;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        font-size: 5vw;
+    }
+
+    80% {
+        top: 13vh;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        font-size: 5vw;
+    }
+
+    100% {
+        top: 10vh;
+        background: black;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;    }
+}
+
+.carear-animation {
+    position: absolute;
+    display: flex;
+    top: 21vh;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 60;
+
+}
+
+.iama {
+    font-family: 'Red Hat Display';
+    font-size: 3vh;
+    font-weight: 500;
+    background: linear-gradient(30deg, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 60;
+
+}
+
+.carear {
+    font-family: 'Red Hat Display';
+    font-size: 3vh;
+    font-weight: 500;
+    background: linear-gradient(30deg, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 1vw;
+    z-index: 60;
+}
+
+.homeanimations-container {
+    position: absolute;
+    color: aliceblue;
+    top: 29vh;
+    left: 10vw;
+    width: 48vw;
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    z-index: 60;
+}
+
+.home-para {
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    font-size: 9px;
+    background: linear-gradient(30deg, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6, #fcfbfb, #e9e8e8, #d7d6d6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 30px;
+}
+
+.circles {
+    position: absolute;
+    background: linear-gradient(30deg, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12, #d7bb05, #fce54b, #d3ba12);
+    right: -40%;
+    top: -50%;
+    width: 1000px;
+    height: 1000px;
+    transition-duration: 4s;
+    transform: rotate(-15deg);
+    animation: circles 9.5s forwards;
+
+}
+
+@keyframes circles {
+    0% {
+        width: 2500px;
+        height: 2500px;
+        z-index: 59;
+
+    }
+
+    90% {
+        width: 2500px;
+        height: 2500px;
+        z-index: 59;
+
+    }
+
+    100% {
+
+        width: 1000px;
+        height: 1000px;
+        z-index: 50;
+
+    }
+}
+.box_container{
+    position: absolute;
+    right: 32%;
+    top: 30%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    z-index: 55;
+}
+.box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: boxanime 20s infinite;
+    z-index: 55;
+
+}
+.card{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    /* border: 2px solid #d3ba12; */
+    transform-style: preserve-3d;
+    color: #d3ba12;
+}
+#front{
+    transform: translateZ(120px);
+    animation: frontanime 4s infinite ;
+}
+
+#back{
+    transform: translateZ(-120px);
+    animation: backanime 5s infinite ;
+
+}
+
+#left{
+    right: 120px;
+    transform: rotateY(-90deg);
+    animation: leftanime 5s infinite ;
+
+}
+
+#right{
+    left: 120px;
+    transform: rotateY(90deg);
+    animation: rightanime 5s infinite ;
+
+}
+
+#top{
+    bottom: 120px;
+    transform: rotateX(90deg);
+    animation: bottomanime 5s infinite ;
+
+}
+
+#bottom{
+    top: 120px;
+    transform: rotateX(-90deg);
+    animation: bottomanime 5s infinite ;
+
+}
+
+
+
+@keyframes boxanime{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    10%{
+        transform: rotateY(180deg);
+    }
+    20%{
+        transform: rotateX(90deg) rotateY(0deg);
+    }
+    30%{
+        transform: rotateX(270deg) ;
+    }
+     40%{
+        transform: rotateX(360deg) rotateY(180deg);
+    }
+    50%{
+        transform:  rotateY(270deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(90deg);
+    }
+    70%{
+        transform: rotateX(450deg) ;
+    }
+    80%{
+        transform: rotateX(270deg) rotateY(270deg);
+    }
+    90%{
+        transform:  rotateY(630deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    } 
+    
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    .IAM-message {
+        position: absolute;
+        font-size: 3vw;
+        
+
+    }
+
+    .homeanimations-container {
+        top: 15vh;
+        left: 3vw;
+        height: 32vh;
+    }
+
+    .name {
+        font-size: 3vw;
+        top: 6vh;
+    }
+
+    .carear-animation {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        top: 12vh;
+    }
+
+    .iama {
+        margin-bottom: 2.5vh;
+        width: 50vw;
+        font-size: 3vw;
+    }
+
+    .carear {
+        width: 80vw;
+        font-size: 3vw;
+    }
+    .box_container{
+        top: 60%;
+        right: 60%;
+        
+    }
+   
+    .box_container img{
+        width: 100px;
+    }
+    #front{
+        transform: translateZ(80px);
+    }
+    
+    #back{
+        transform: translateZ(-80px);
+    
+    }
+    
+    #left{
+        right: 80px;
+       
+    }
+    
+    #right{
+        left: 80px;
+        
+    
+    }
+    
+    #top{
+        bottom: 80px;
+       
+    
+    }
+    
+    #bottom{
+        top: 80px;
+       
+    
+    }
+    
+    
+
+    @keyframes iammove {
+        0% {
+            top: 15vh;
+            left: 30vw;
+            width: 60vw;
+            font-size: 10vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        40% {
+            top: 15vh;
+            left: 27vw;
+            width: 60vw;
+            font-size: 10vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        50% {
+            top: 0vh;
+            left: 0vw;
+            font-size: 10vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        80% {
+            top: 0vh;
+            left: 0vw;
+            font-size: 10vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        100% {
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;        }
+    }
+
+    @keyframes namemove {
+        0% {
+            top: 13vh;
+            font-size: 7vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        50% {
+            top: 13vh;
+            font-size: 7vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        80% {
+            top: 13vh;
+            font-size: 7vw;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        100% {
+            top: 6vh;
+            background: black;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+    }
+
+    .circles {
+        top: 50%;
+        right: -90%;
+        width: 400px;
+        height: 400px;
+    }
+
+    
+@keyframes circles {
+    0% {
+        width: 5000px;
+        height: 2500px;
+        top: -50%;
+        z-index: 59;
+
+    }
+
+    90% {
+        width: 5000px;
+        height: 2500px;
+        top: -50%;
+        z-index: 59;
+
+    }
+
+    100% {
+
+        width: 1000px;
+        height: 1000px;
+        top: 65%;
+        z-index: 50;
+
+    }
+}
+    .home-para {
+        line-height: normal;
+        width: 80vw;
+        height: 9vh;
+        font-size: 8px;
+
+    }
+
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {  useRef } from 'react'
+import { About, Contact, Home, Navbar, Projects, Skills } from './component'
 
-function App() {
+const App = () => {
+  const homeelement = useRef(null)
+  const skillelement = useRef(null)
+  const projectelement = useRef(null)
+  const aboutelement = useRef(null)
+  const contactelement = useRef(null)
+
+  
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+    <Navbar skillref={skillelement}  homeref={homeelement} projectref={projectelement} aboutref={aboutelement} contactref={contactelement} />
+    <Home  ref={homeelement}/>
+    <Skills  ref={skillelement}/>
+    <Projects ref={projectelement}/> 
+    <About ref={aboutelement}/>
+    <Contact ref={contactelement}/>
+    
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

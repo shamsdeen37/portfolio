@@ -1,0 +1,173 @@
+.form-container{
+    background: linear-gradient(30deg,#d7bb05,#fce54a,#d3ba12,#d7bb05,#fce54b,#d3ba12,#d7bb05,#fce54b,#d3ba12,#d7bb05,#fce54b,#d3ba12);
+    width: 55%;
+    height: 100%;
+    box-shadow: 9px 9px 10px black,-0.5px -0.5px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.form{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    color: black;
+    font-weight: bold;
+    font-family: Arial;
+    z-index: 10;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+
+}
+.inputname , .inputemail ,.textarea{
+    background: black;
+    border: none;
+    outline: none;
+    color: #d7bb05;
+    box-shadow: 3px 3px 2px black,-1px -1px 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25vw;
+    height: 4vh;
+}
+.textarea{
+    height: 15vh;
+}
+.inputsubmit{
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(30deg,#080808,#252525,#191918,#080808,#252525,#191918);
+    border-radius: 5px;
+    color: #fce54b;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px black,-1px -1px 1px black;
+}
+.contact-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 20%;
+    margin-right: 10%;
+}
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d3ba12;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.contact-icon a,.resume{
+    text-decoration: none;
+    cursor: pointer;
+    color: #d3ba12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.resume-image{
+    position: absolute;
+    left: 0;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    background: #252525be;
+    display: none;
+}
+.resume-image img{
+    position: absolute;
+    width: auto;
+    height: 90%;
+    left: 45%;
+    top: 30px;
+}
+.resume-button{
+    width: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    left: 10%;
+}
+.resume-button a{
+    text-decoration: none;
+}
+.resume-button button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.downloadbutton{
+    background: linear-gradient(30deg,#d7bb05,#fce54a,#d3ba12,#d7bb05,#fce54b,#d3ba12);
+    color: black;
+
+}
+.canclebutton{
+    background: linear-gradient(30deg,rgb(27, 27, 27),rgb(63, 63, 63),rgb(45, 42, 42));
+    color: #fce54b;
+}
+.visible{
+    display:block;
+}
+
+@media (max-width:480px){
+    .form-container{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+    }
+    label{
+        width: 90%;
+    }
+    .inputemail,.inputname,.textarea{
+        width: 50vw;
+    }
+    .textarea{
+        height: 12vh;
+    }
+    .inputsubmit{
+        width: 130px;
+        height: 40px;
+    }
+    .contact-icons{
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .resume-image img{
+        width: 100%;
+        left: 1%;
+        height: 80%;
+    }
+    .resume-button{
+        width: 100%;
+        left: 0;
+        top: 90%;
+    }
+}
